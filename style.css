@@ -1,0 +1,303 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+ background: var(--dark-bg);
+ color: var(--text-light);
+}
+
+nav{
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background:transparent;
+z-index: 1000;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.logo {
+  color: white;
+
+}
+
+.hero{
+ height: 100vh;
+ background:  url("image/hero.png") 
+ no-repeat center center/cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+}
+.overlay{
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text{
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  animation: fadeIn 2s ease-in-out;
+ 
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+opacity: 1;
+transform: translateY(0);
+  }
+}
+
+@media (max-width: 768 ){
+nav {
+  padding: 15px 20px;
+
+}
+nav ul{
+  display: none;
+}
+.hero-text h1 {
+  font-size: 32px;
+
+}
+.hero-text h2 {
+  font-size: 20px;
+
+}
+.hero-text p{
+  font-size: 16px;
+  padding: 0 15px;
+
+}
+.section{
+  padding: 40px 20px ;
+}
+}
+
+
+.hero-text h1 {
+ font-size: 50px;
+ color: white;
+ text-shadow: 0 0 10px var(--primary);
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  color:#87ceeb;
+  margin-bottom: 20px;
+
+}
+
+.hero-text p{
+  margin-bottom: 25px;
+font-size: 18px;
+}
+
+.btn{
+  padding: 14px 28px ;
+  background:var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600px;
+  transition: 0.3s;
+}
+.btn:hover{
+background: #084298;
+transform: translateY(-3px);
+}
+
+.hero-image{
+  width:500px;
+}
+.section{
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.section h2{
+  font-size: 32px;
+  margin-bottom: 30px;
+  color:var(--primary);
+  font-weight: 700px;
+
+}
+
+footer{
+text-align: center;
+padding: 20px;
+background: var(--primary);
+color: white;
+}
+
+.projects-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+background: var(--card-bg);
+padding: 25px;
+width: 250px;
+border-radius: 115px;
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow:0 0 20px var(--primary);
+
+}
+
+#dark-mode-toggle{
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+body.dark-mode{
+  background: #121212;
+  color: var(--primary);
+
+}
+body.dark-mode.card{
+  background: #1e1e1e;
+  color: white;
+}
+body.dark-mode nav.scrolled{
+  background: #000;
+}
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+@media(max-width:768px){
+  .menu-toggle {
+    display: flex;
+
+  }
+  nav ul{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    width: 220px;
+    display: none;
+    padding: 20px 0;
+  }
+  nav ul.active{
+    display: flex;
+  }
+}
+nav.scrolled{
+  background: #0d6efd;
+  transition: 0.3s;
+}
+
+:root{
+  --primary: #00bfff;
+  --dark-bg: #0a192f;
+  --card-bg:rgba(255, 255, 255, 0.05);
+  --text-light:#ccd6f6;
+}
+
+.about-container{f
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.skill{
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+.skill-bar{
+  width: 100%;
+  background: #ddd;
+  height: 1opx;
+  border-radius: 5px;
+}
+.skill-level{
+  height: 10px;
+  border-radius: 5px;
+  background: var(--primary);
+}
+.python {
+  width: 75%;
+
+}
+.html{
+  width: 85%;
+}
+.data{
+  width: 55%;
+}
+.contact{
+  background: #f8f9fa;
+}
+.contact-form{
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea{
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+}
+.contact-form textarea{
+  height: 12opx;
+}
