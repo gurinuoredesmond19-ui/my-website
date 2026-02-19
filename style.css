@@ -30,7 +30,7 @@ nav ul{
 
 nav a{
   text-decoration: none;
-  color: #ffffff;
+  color: black;
   font-weight: bold;
 
 }
@@ -301,3 +301,4 @@ nav.scrolled{
   height: 12opx;
 
 }
+
