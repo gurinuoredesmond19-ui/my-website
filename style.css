@@ -17,7 +17,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 20px 50px;
-background:white;
+background:#87ceeb;
 
 }
 
@@ -38,7 +38,7 @@ html{
   scroll-behavior: smooth;
 }
  nav.logo{
-  color: black;
+  color: white;
   font-weight: 600px;
   font-size: 20px;
  }
@@ -301,4 +301,5 @@ nav.scrolled{
   height: 12opx;
 
 }
+
 
