@@ -10,16 +10,15 @@ body{
 }
 
 nav{
-position: fixed;
+
 width: 100%;
-top: 0;
-left: 0;
+
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 20px 50px;
-background:transparent;
-z-index: 1000;
+background:white;
+
 }
 
 nav ul{
@@ -38,11 +37,11 @@ nav a{
 html{
   scroll-behavior: smooth;
 }
-
-.logo {
-  color: white;
-
-}
+ nav.logo{
+  color: black;
+  font-weight: 600px;
+  font-size: 20px;
+ }
 
 .hero{
  height: 100vh;
@@ -300,4 +299,5 @@ nav.scrolled{
 }
 .contact-form textarea{
   height: 12opx;
+
 }
